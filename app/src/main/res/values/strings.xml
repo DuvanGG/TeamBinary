@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BinaryTeam</string>
+    <string name="este_es_el_titulo">ESTE ES EL TITULO</string>
+    <string name="esta_es_la_descripcion">ESTA ES LA DESCRIPCION</string>
+    <string name="ubicacion">UBICACION</string>
+    <string name="calificacion" />
+</resources>
