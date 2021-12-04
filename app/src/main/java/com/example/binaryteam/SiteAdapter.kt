@@ -1,14 +1,14 @@
 package com.example.binaryteam
 
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
-class SiteAdapter (private val sitesList: ArrayList<Site>
+class SiteAdapter (private val sitesList: ArrayList<SiteItem>
 
 ) : RecyclerView.Adapter<SiteAdapter.ViewHolder>() {
 
@@ -32,15 +32,17 @@ class SiteAdapter (private val sitesList: ArrayList<Site>
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         private var titleTextView: TextView = itemView.findViewById(R.id.siteTitle)
-        private var descripcionTextView: TextView = itemView.findViewById(R.id.siteDescription)
-        private var ubicacionTextView: TextView = itemView.findViewById(R.id.siteLocation)
-        //private var imagenTextView: ImageView = itemView.findViewById(R.id.siteImage)
+        private var descriptionTextView: TextView = itemView.findViewById(R.id.siteDescription)
+        private var locationTextView: TextView = itemView.findViewById(R.id.siteLocation)
+        private var pictureImageView: ImageView = itemView.findViewById(R.id.siteImage)
         //private var calificacionTextView: TextView = itemView.findViewById(R.id.siteCalification)
 
-        fun bind(site: Site){
+        fun bind(site: SiteItem){
             titleTextView.text = site.titulo
-            descripcionTextView.text = site.descripcion
-            ubicacionTextView.text = site.ubicacion
+            descriptionTextView.text = site.descripcion
+            locationTextView.text = site.ubicacion
+            Picasso.get().load(site.imagenURL).into(pictureImageView);
+
 
 
 
