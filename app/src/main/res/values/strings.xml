@@ -4,4 +4,5 @@
     <string name="esta_es_la_descripcion">ESTA ES LA DESCRIPCION</string>
     <string name="ubicacion">UBICACION</string>
     <string name="calificacion" />
+    <string name="todo">TODO</string>
 </resources>

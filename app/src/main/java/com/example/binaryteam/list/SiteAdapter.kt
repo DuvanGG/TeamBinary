@@ -1,4 +1,4 @@
-package com.example.binaryteam
+package com.example.binaryteam.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.binaryteam.R
+import com.example.binaryteam.model.SiteItem
 import com.squareup.picasso.Picasso
 
-class SiteAdapter (private val sitesList: ArrayList<SiteItem>
+class SiteAdapter (
+    private val sitesList: ArrayList<SiteItem>,
+    private val onItemClicked: (SiteItem) -> Unit
 
 ) : RecyclerView.Adapter<SiteAdapter.ViewHolder>() {
 
@@ -19,6 +23,7 @@ class SiteAdapter (private val sitesList: ArrayList<SiteItem>
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val site = sitesList[position]
+        holder.itemView.setOnClickListener{ onItemClicked(sitesList[position])}
         holder.bind(site)
 
     }

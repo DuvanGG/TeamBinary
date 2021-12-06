@@ -1,4 +1,4 @@
-package com.example.binaryteam
+package com.example.binaryteam.model
 
 
 import com.google.gson.annotations.SerializedName

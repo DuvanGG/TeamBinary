@@ -1,13 +1,17 @@
-package com.example.binaryteam
+package com.example.binaryteam.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.binaryteam.R
+import com.example.binaryteam.model.Site
+import com.example.binaryteam.model.SiteItem
 import com.google.gson.Gson
 
-class MainActivity : AppCompatActivity() {
+class ListSitesActivity : AppCompatActivity() {
 
     private lateinit var ListSites : ArrayList<SiteItem>
     private lateinit var siteAdapter: SiteAdapter
@@ -27,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         ListSites = loadMockSitesFromJson()
 
-        siteAdapter = SiteAdapter(ListSites)
+        siteAdapter = SiteAdapter(ListSites, onItemClicked = { onSiteClicked(it) })
 
         sitesRecyclerView.addItemDecoration(
             DividerItemDecoration(
@@ -43,6 +47,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+    }
+
+    private fun onSiteClicked(site: SiteItem) {
+        Log.d("titulo", site.titulo )
 
     }
 
