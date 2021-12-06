@@ -1,6 +1,11 @@
 package com.example.binaryteam
 
 
-import com.google.gson.annotations.SerializedName
-
-class Site : ArrayList<SiteItem>()
+data class Site (
+    val titulo: String,
+    var temperatura: String,
+    var imagen: String,
+    var descripcion: String,
+    var calificacion: String,
+    var ubicacion: String,
+)

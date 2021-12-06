@@ -64,8 +64,20 @@
                     android:text="@string/ubicacion"/>
 
 
+
             </LinearLayout>
 
+            <RatingBar
+                android:id="@+id/ratBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:layout_margin="@dimen/margin_normal"
+                style="?android:attr/ratingBarStyleSmall"
+
+                />
 
 
         </LinearLayout>
