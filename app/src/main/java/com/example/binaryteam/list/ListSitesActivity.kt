@@ -1,5 +1,6 @@
 package com.example.binaryteam.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.binaryteam.R
+import com.example.binaryteam.detalle.DetalleActivity
 import com.example.binaryteam.model.Site
 import com.example.binaryteam.model.SiteItem
 import com.google.gson.Gson
@@ -52,6 +54,9 @@ class ListSitesActivity : AppCompatActivity() {
 
     private fun onSiteClicked(site: SiteItem) {
         Log.d("titulo", site.titulo )
+        val intent = Intent(this, DetalleActivity::class.java)
+        intent.putExtra("site", site)
+        startActivity(intent)
 
     }
 
