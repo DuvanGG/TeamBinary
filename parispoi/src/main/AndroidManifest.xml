@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.binaryteam">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.example.parispoi">
 
     <application
         android:allowBackup="true"
@@ -12,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BinaryTeam">
         <activity
-            android:name=".list.ListSitesActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".detalle.DetalleActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

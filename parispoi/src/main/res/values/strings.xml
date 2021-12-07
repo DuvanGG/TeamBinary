@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">BinaryTeam</string>
+    <string name="app_name">ParisPoi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="este_es_el_titulo">ESTE ES EL TITULO</string>
     <string name="esta_es_la_descripcion">ESTA ES LA DESCRIPCION</string>
     <string name="ubicacion">UBICACION</string>
