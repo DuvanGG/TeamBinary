@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BinaryTeam">
-
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="false" />
         <activity
             android:name=".list.ListSitesActivity"
             android:exported="true">
