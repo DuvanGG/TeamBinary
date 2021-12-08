@@ -1,80 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/itemContainer"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:background="?android:attr/selectableItemBackground"
-    android:weightSum="100">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="98"
-        android:orientation="horizontal"
-        android:padding="4dp"
-        android:weightSum="100">
-
-        <ImageView
-            android:id="@+id/siteImage"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="35"
-            android:contentDescription="@null"
-            tools:ignore="NestedWeights" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="65"
-            android:orientation="vertical"
-            android:weightSum="100">
+    <ImageView
+        android:id="@+id/siteImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/torre" />
 
 
-            <TextView
-                android:id="@+id/siteTitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="40"
-                android:text="@string/este_es_el_titulo"
-                android:gravity="center_vertical|center_horizontal"/>
+    <TextView
+        android:id="@+id/siteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="@string/torre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#473232"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siteImage"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/siteDescription"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"
+        android:text="@string/descripcion_torre"
+        app:layout_constraintTop_toBottomOf="@id/siteTitle"
+        app:layout_constraintStart_toEndOf="@id/siteImage"
+        android:textColor="@color/teal_700"
+        android:textSize="15dp"
+    />
+
+    <RatingBar
+        android:id="@+id/ratingDetail"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4"
+        android:progressBackgroundTint="#4F6C1010"
+        android:progressTint="#6C1010"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="60"
-                android:orientation="horizontal"
-                android:weightSum="100">
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/siteDescription"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="70"
-                    android:text="@string/esta_es_la_descripcion"
-                    tools:ignore="NestedWeights" />
-
-                <TextView
-                    android:id="@+id/siteLocation"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="30"
-                    android:text="@string/ubicacion"/>
-
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2" />
-
-</LinearLayout>
