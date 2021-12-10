@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.parispoi.databinding.FragmentDetailBinding
 import com.example.parispoi.main.MainActivity
@@ -40,6 +41,10 @@ class DetailFragment : Fragment() {
             Picasso.get().load(site.imagenURL).into(imageDetail)
             descriptionDetail.text = site.descripcion
             ratingDetail.rating = site.calificacion.toFloat()
+
+            mapButton.setOnClickListener{
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+            }
         }
     }
 
