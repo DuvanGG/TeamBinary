@@ -33,6 +33,15 @@ class SiteAdapter (
 
     }
 
+    fun appendItems(newItems: ArrayList<SiteItem>){
+        sitesList.clear()
+        sitesList.addAll(newItems)
+        notifyDataSetChanged()
+
+    }
+
+
+
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 

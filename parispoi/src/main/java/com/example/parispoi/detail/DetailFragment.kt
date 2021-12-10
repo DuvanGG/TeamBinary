@@ -37,7 +37,7 @@ class DetailFragment : Fragment() {
 
         with(detailBinding){
             titleDetail.text = site.titulo
-            com.squareup.picasso.Picasso.get().load(site.imagenURL).into(imageDetail)
+            Picasso.get().load(site.imagenURL).into(imageDetail)
             descriptionDetail.text = site.descripcion
             ratingDetail.rating = site.calificacion.toFloat()
         }
