@@ -1,4 +1,4 @@
-package com.example.parispoi.maps
+package com.example.parispoi.ui.maps
 
 import androidx.fragment.app.Fragment
 

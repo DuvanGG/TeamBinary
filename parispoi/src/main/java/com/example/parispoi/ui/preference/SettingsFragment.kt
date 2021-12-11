@@ -1,11 +1,11 @@
-package com.example.parispoi.preference
+package com.example.parispoi.ui.preference
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.example.parispoi.R
-import com.example.parispoi.main.MainActivity
+import com.example.parispoi.ui.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

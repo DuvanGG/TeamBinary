@@ -1,4 +1,4 @@
-package com.example.parispoi.list
+package com.example.parispoi.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
