@@ -11,8 +11,10 @@ data class SiteItem(
     val descripcion: String,
     @SerializedName("imagenURL")
     val imagenURL: String,
+    @SerializedName("temperatura")
+    val temperatura: String,
     @SerializedName("titulo")
     val titulo: String,
     @SerializedName("ubicacion")
     val ubicacion: String
-): Serializable
+):Serializable

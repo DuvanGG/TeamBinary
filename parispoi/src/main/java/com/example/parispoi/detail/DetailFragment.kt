@@ -41,7 +41,7 @@ class DetailFragment : Fragment() {
             Picasso.get().load(site.imagenURL).into(imageDetail)
             descriptionDetail.text = site.descripcion
             ratingDetail.rating = site.calificacion.toFloat()
-
+            TempDetail.text = site.temperatura
             mapButton.setOnClickListener{
                 findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
             }

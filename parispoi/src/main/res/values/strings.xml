@@ -43,4 +43,6 @@
     <string name="preferences">Preferencias</string>
     <string name="torre">Torre_Eiffel</string>
     <string name="descripcion_torre">La Torre Eiffel (en francés Tour Eiffel) es un armazón de hierro construido con motivo de llevarse a cabo en la ciudad de París en el año 1889 la Exposición Universal.</string>
+    <string name="Prueva">Prueva</string>
+    <string name="Temperatura">Temperatura: </string>
 </resources>
