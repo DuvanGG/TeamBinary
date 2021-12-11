@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ParisPoi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="este_es_el_titulo">ESTE ES EL TITULO</string>
+    <string name="esta_es_la_descripcion">ESTA ES LA DESCRIPCION</string>
+    <string name="ubicacion">PARIS</string>
+    <string name="calificacion" />
+    <string name="todo">TODO</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_list">Lista</string>
+    <string name="title_detail">Detalle</string>
+    <string name="title_preference">Preferencias</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="preferences">Preferencias</string>
+    <string name="torre">Torre_Eiffel</string>
+    <string name="descripcion_torre">La Torre Eiffel (en francés Tour Eiffel) es un armazón de hierro construido con motivo de llevarse a cabo en la ciudad de París en el año 1889 la Exposición Universal.</string>
+</resources>

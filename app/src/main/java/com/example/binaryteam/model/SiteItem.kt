@@ -2,6 +2,7 @@ package com.example.binaryteam.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class SiteItem(
     @SerializedName("calificacion")
@@ -14,4 +15,4 @@ data class SiteItem(
     val titulo: String,
     @SerializedName("ubicacion")
     val ubicacion: String
-)
+): Serializable

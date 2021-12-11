@@ -1,0 +1,38 @@
+[
+  {
+    "titulo":"Torre Eiffel",
+    "descripcion":"La Torre Eiffel (en francés Tour Eiffel) es un armazón de hierro construido con motivo de llevarse a cabo en la ciudad de París en el año 1889 la Exposición Universal.",
+    "calificacion":"5",
+    "ubicacion":"Paris",
+    "imagenURL":"https://sitiosturisticos.com/wp-content/uploads/2010/05/Torre-Eiffel-vista-panoramica-300x168.jpg"
+  },
+  {
+    "titulo":"Museo del Louvre",
+    "descripcion":"El Museo del Louvre es el museo nacional de Francia consagrado tanto a las bellas artes como a la arqueología y las artes decorativas anteriores al Impresionismo",
+    "calificacion":"4",
+    "ubicacion":"Paris",
+    "imagenURL":"https://sitiosturisticos.com/wp-content/uploads/2012/01/Museo-del-Louvre-frontis-300x225.jpg"
+  },
+  {
+    "titulo":"Catedral de Notre Dame",
+    "descripcion":"La Catedral de Notre-Dame (en francés Cathédrale de Notre-Dame), es una de las catedrales francesas más antiguas de estilo gótico, que si bien no es la catedral más grande de Francia.",
+    "calificacion":"3",
+    "ubicacion":"Paris",
+    "imagenURL":"https://sitiosturisticos.com/wp-content/uploads/2012/07/NotreDame-Paris-300x240.jpg"
+  },
+  {
+    "titulo":"Arco del Triunfo",
+    "descripcion":"El Arco de Triunfo es un importante monumento que fue erigido por encargo de Napoleón Bonaparte.",
+    "calificacion":"2",
+    "ubicacion":"Paris",
+    "imagenURL":"https://sitiosturisticos.com/wp-content/uploads/2012/10/Arco-del-Triunfo-Paris-300x200.jpg"
+  },
+  {
+    "titulo":"Plaza de la concordia",
+    "descripcion":"La plaza de la Concordia está situada al comienzo de la avenida de los Campos Elíseos en el VIII Distrito de París, en Francia.",
+    "calificacion":"1",
+    "ubicacion":"Paris",
+    "imagenURL":"https://sitiosturisticos.com/wp-content/uploads/2012/07/Place-de-la-concorde-Paris-300x224.jpg"
+  }
+  
+]

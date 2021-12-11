@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/siteImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/torre" />
+
+
+    <TextView
+        android:id="@+id/siteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="@string/torre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#473232"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siteImage"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/siteDescription"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"
+        android:text="@string/descripcion_torre"
+        app:layout_constraintTop_toBottomOf="@id/siteTitle"
+        app:layout_constraintStart_toEndOf="@id/siteImage"
+        android:textColor="@color/teal_700"
+        android:textSize="15dp"
+    />
+
+    <RatingBar
+        android:id="@+id/ratingDetail"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4"
+        android:progressBackgroundTint="#4F6C1010"
+        android:progressTint="#6C1010"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
