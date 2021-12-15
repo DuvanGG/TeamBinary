@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="com.example.parispoi.list.ListFragment"
+        android:name="com.example.parispoi.ui.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.example.parispoi.detail.DetailFragment"
+        android:name="com.example.parispoi.ui.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument
@@ -31,11 +31,11 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_preferences"
-        android:name="com.example.parispoi.preference.SettingsFragment"
+        android:name="com.example.parispoi.ui.preference.SettingsFragment"
         android:label="SettingsFragment" />
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.example.parispoi.maps.MapsFragment"
+        android:name="com.example.parispoi.ui.maps.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
 </navigation>
