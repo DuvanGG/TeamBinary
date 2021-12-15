@@ -1,4 +1,4 @@
-package com.example.parispoi.list
+package com.example.parispoi.ui.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.parispoi.databinding.FragmentListBinding
-import com.example.parispoi.main.MainActivity
+import com.example.parispoi.ui.main.MainActivity
 import com.example.parispoi.model.SiteItem
 
 
@@ -34,7 +34,9 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
-        listViewModel.loadMockSitesFromJson(context?.assets?.open("sites.json"))
+        //listViewModel.loadMockSitesFromJson(context?.assets?.open("sites.json"))
+
+        listViewModel.getSitesFromServer()
 
         listViewModel.onSitesLoaded.observe(viewLifecycleOwner, { result ->
             onSiteLoadedSubscribe(result)

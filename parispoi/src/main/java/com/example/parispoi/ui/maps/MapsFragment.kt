@@ -1,4 +1,4 @@
-package com.example.parispoi.maps
+package com.example.parispoi.ui.maps
 
 import androidx.fragment.app.Fragment
 
@@ -26,13 +26,27 @@ class MapsFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
 
-        val torreEiffel = LatLng(48.85829,2.29435)
-        googleMap.addMarker(MarkerOptions().position(torreEiffel).title("Esta es la torre Eiffel"))
+        val torreEiffel = LatLng(48.85838419677619, 2.294942637450299)
+        googleMap.addMarker(MarkerOptions().position(torreEiffel).title("Aqui se ubica la torre Eiffel"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(torreEiffel, 15F))
+
+        val museo = LatLng(48.86070636797204, 2.3379175828316403)
+        googleMap.addMarker(MarkerOptions().position(museo).title("Aqui se ubica el museo de Louvre"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(museo, 15F))
+
+        val catedral = LatLng(48.85309525022425, 2.3502883356025825)
+        googleMap.addMarker(MarkerOptions().position(catedral).title("Aqui se ubica la Catedral de Notre Dame"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral, 15F))
+
+        val arco = LatLng(48.873982206280886, 2.295510295121662)
+        googleMap.addMarker(MarkerOptions().position(arco).title("Aqui se ubica el Arco del triunfo"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(arco, 15F))
+
+        val plaza = LatLng(48.86568174508975, 2.3208950184141717)
+        googleMap.addMarker(MarkerOptions().position(plaza).title("Aqui se ubica la Plaza de la concordia"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(plaza, 15F))
+
     }
 
     override fun onCreateView(

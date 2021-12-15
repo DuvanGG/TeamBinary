@@ -1,4 +1,4 @@
-package com.example.parispoi.bottom
+package com.example.parispoi.ui.bottom
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

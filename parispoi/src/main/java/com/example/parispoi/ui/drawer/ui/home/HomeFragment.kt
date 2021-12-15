@@ -1,4 +1,4 @@
-package com.example.parispoi.drawer.ui.home
+package com.example.parispoi.ui.drawer.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

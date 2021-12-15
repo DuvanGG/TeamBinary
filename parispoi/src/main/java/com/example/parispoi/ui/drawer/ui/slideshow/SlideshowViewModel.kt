@@ -1,4 +1,4 @@
-package com.example.parispoi.drawer.ui.slideshow
+package com.example.parispoi.ui.drawer.ui.slideshow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

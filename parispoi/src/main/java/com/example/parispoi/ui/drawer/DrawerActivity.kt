@@ -1,4 +1,4 @@
-package com.example.parispoi.drawer
+package com.example.parispoi.ui.drawer
 
 import android.os.Bundle
 import android.view.Menu
