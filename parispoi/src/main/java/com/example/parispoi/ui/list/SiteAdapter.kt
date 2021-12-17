@@ -48,20 +48,15 @@ class SiteAdapter (
 
         private var titleTextView: TextView = itemView.findViewById(R.id.siteTitle)
         private var descriptionTextView: TextView = itemView.findViewById(R.id.siteDescription)
-        //private var locationTextView: TextView = itemView.findViewById(R.id.siteLocation)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.siteImage)
         private var raitingDetail: RatingBar = itemView.findViewById(R.id.ratingDetail)
-        //private var calificacionTextView: TextView = itemView.findViewById(R.id.siteCalification)
+
 
         fun bind(site: SiteItem){
             titleTextView.text = site.titulo
             descriptionTextView.text = site.descripcion
-           // locationTextView.text = site.ubicacion
             raitingDetail.rating = site.calificacion.toFloat()
             Picasso.get().load(site.imagenURL).into(pictureImageView);
-
-
-
 
         }
 

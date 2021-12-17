@@ -34,7 +34,6 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
-        //listViewModel.loadMockSitesFromJson(context?.assets?.open("sites.json"))
 
         listViewModel.getSitesFromServer()
 
@@ -57,11 +56,6 @@ class ListFragment : Fragment() {
     private fun onSiteLoadedSubscribe(result: ArrayList<SiteItem>?) {
         result?.let { listSites ->
             siteAdapter.appendItems(listSites)
-
-
-            /*
-            this.listSites = listSites
-            siteAdapter.notifyDataSetChanged()*/
         }
 
 
@@ -73,13 +67,4 @@ class ListFragment : Fragment() {
 
     }
 
-    /*private fun loadMockSitesFromJson(): ArrayList<SiteItem> {
-
-        var sitesString: String =
-            context?.assets?.open("sites.json")?.bufferedReader().use { it!!.readText() }
-        var gson = Gson()
-        val sitesListConvert = gson.fromJson(sitesString, Site::class.java)
-
-        return sitesListConvert
-    }*/
 }
