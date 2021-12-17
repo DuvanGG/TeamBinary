@@ -11,9 +11,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="3dp"
         android:background="#887E7E"
         app:cardBackgroundColor="#FFFFFF"
@@ -53,7 +53,7 @@
                 android:text="@string/torre"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#473232"
-                android:textSize="20dp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/siteImage"
@@ -61,14 +61,14 @@
 
             <TextView
                 android:id="@+id/siteDescription"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
+                android:layout_width="204dp"
+                android:layout_height="26dp"
                 android:layout_marginStart="12dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="@string/descripcion_torre"
                 android:textColor="@color/teal_700"
-                android:textSize="15dp"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@id/siteImage"
                 app:layout_constraintTop_toBottomOf="@id/siteTitle" />
 
