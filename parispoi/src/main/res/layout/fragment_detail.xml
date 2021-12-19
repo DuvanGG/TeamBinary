@@ -76,15 +76,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/Prueva"
-        android:textColor="@color/black"
+        android:text="@string/Prueba"
+        android:textColor="#6C1010"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/ratingDetail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ubicacionDetail"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail"
+        app:layout_constraintVertical_bias="0.89"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -92,16 +94,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="34dp"
 
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:text="@string/Temperatura"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/descriptionDetail"
+        android:textColor="#6C1010"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingDetail"
         app:layout_constraintEnd_toStartOf="@+id/TempDetail"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageDetail"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail"
         tools:ignore="MissingConstraints" />
 
     <RatingBar
